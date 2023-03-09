@@ -1,5 +1,6 @@
 package com.interview;
 
+import com.interview.solutions.Laptop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
