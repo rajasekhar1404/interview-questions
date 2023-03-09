@@ -90,3 +90,14 @@ class Student {
 - Liskov substitute principle - Inheritance should be used only when the super class can be replaced by the subclass,
 - Interface segregation principle - Should not force to implement the interfaces which we are not using, better to create a new interface,
 - Dependency Inversion principle - Instead of depending on concrete classes, should depend on abstraction.
+
+### 9, 10. Memory in java
+- We have a class called Runtime in lang package which will gives the freeMemory(), totalMemory(), etc.. methods to find the memory of the java.
+```java
+public class Memory {
+  public static void main(String[] args) {
+    Runtime runtime = Runtime.getRuntime();
+    System.out.println(runtime.freeMemory() + ", total memory: " + runtime.totalMemory());
+  }
+}
+```
