@@ -91,7 +91,11 @@ class Student {
 - Interface segregation principle - Should not force to implement the interfaces which we are not using, better to create a new interface,
 - Dependency Inversion principle - Instead of depending on concrete classes, should depend on abstraction.
 
-### 9, 10. Memory in java
+### 5. ACID principles
+### 6. Fail fast, fail safe iterators
+### 7. How internally fail-fast checks and throw ConcurrentModificationException?
+- Internally it checks the expectedModCount and Modified count(any change in the structure of collection) in checkForCoModification() whenever iterator using the next()
+### 8, 9. Memory in java
 - We have a class called Runtime in lang package which will gives the freeMemory(), totalMemory(), etc.. methods to find the memory of the java.
 ```java
 public class Memory {
@@ -101,3 +105,74 @@ public class Memory {
   }
 }
 ```
+### 10. How to get the size of the java object ?
+### 11. Object Serialization with inheritance in java
+### 12. There are three statements in a try block - statement1, statement2 and statement3, After that there is a catch block to catch the exceptions occurred in the try block. Assume that exception has occurred in statement2. Does statement3 get executed or not ?
+### 13. What is unreachable catch block error ?
+### 14. What is the difference between ClassNotFoundException and NoClassDefFoundError in java ?
+### 15. Custom immutable class
+### 16. Why java 8 is more popular than java 9 and other versions?
+### 17. Interface and why it is? Why interfaces widely used than abstract classes?
+### 18. Is Functional interface there before java8? What are they ?
+### 19. Custom functional interface creation
+### 20. Other than public what ar the access modifier for interface
+### 21. Timed out exception
+### 22. TreeMap?
+### 23. Where we are LinkedHashMap?
+### 24. SQL injection
+### 25. How we know a thread is completed ?
+### 26. How we execute multiple methods parallel and aggregate?
+### 27. HashSet of employees bases on name, how we can get unique employees based on email id.
+### 28. How do you scale your application?
+### 29. Transaction propagation
+### 30. Transactional isolation
+### 31. String Builder vs String Buffer
+### 32. @Service vs @Repository, Is spring container throws any exception while using @Repository in Service interface
+### 33. Service interface
+### 34. Spring AOP
+### 35. How we use cross-cutting concerns
+### 36. Interceptor and filters
+### 37. Composite key in jpa
+### 38. Fetch - early fetch, lazy fetch
+### 39. Stupid bean in java
+### 40. Comparable() vs comparator()
+### 41. To avoid clone() - (Implement Cloneable interface and override clone() and throw cloneNotSupported)
+### 42. Merge vs pull
+### 43. Git conflicts resolve
+### 44. Git rollback
+### 45. Virtualization or containerization
+### 46. Character occurrence using HashMap, put() method returns ? - initially it returns null, later it returns previous value(V)
+### 47. How many tables will create in one-to-many and many-to-many hibernate
+### 48. Spring actuator
+### 49. Spring mvc flow
+### 50. Spring jpa
+### 51. Get() vs load()
+### 52. Hibernate caches and configuration for second level cache
+### 53. Spring vs spring boot
+### 54. Print middle number in given 3 numbers
+### 55. == and .equals()
+### 56. Object class
+### 57. Second max highest salary in employee table
+### 58. Why ArrayList is fast
+### 59. List vs Set
+### 60. Compare vs compareTo
+### 61. Fork in git.
+### 61. TreeMap/TreeSet internal working
+### 62. Handling Cache in spring boot
+### 63. String - intern() method
+### 64. Context-path vs request-path
+### 65. String internal working
+### 66. Try with resources.
+### 67. Spring profiles
+### 68. Serialization vs deserialization - implementation
+### 69. Serialization and it's child classes need to be serialized or not ?
+### 70. Diamond problem
+### 71. Volatile keyword-not required to serialization
+### 72. Fork in java
+### 73. Marker interface
+### 74. Thread-safe, non-thread-safe
+### 75. Bean ambiguity -@Primary
+### 76. JWT - to rest endpoints secure. Spring security.
+### 77. Spring boot - default servers-tomcat, undertow, jetty
+### 78. Exception handling in spring boot
+### 79. wait(), notify() and notifyAll() are methods in Object class
