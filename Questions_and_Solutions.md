@@ -499,3 +499,60 @@ interface Def {
 ### 77. Spring boot - default servers-tomcat, undertow, jetty
 ### 78. Exception handling in spring boot
 ### 79. wait(), notify() and notifyAll() are methods in Object class
+### 80. Custom annotations
+### 81. how to exclude multiple dependencies in maven?
+### 82. default Log4j level
+### 83. HashMap, HashSet internal working
+### 84. What is Optional
+### 85. Optional chaining
+### 86. Handling null pointers using Optional class
+### 87. Functional interface, lambda, streams.
+### 88. Map, filter, grouping by
+### 89. Map vs flat map
+### 90. Sorting
+### 91. Method reference - can we call static / noo-static methods ?
+### 92. List of employees group by designation and sorting.
+### 93. Segment locking or bucket locking
+### 94. ArrayList vs CopyOnWriteArrayList
+### 95. Difference between Session get() and load() method?
+### 96. Mapping in Hibernate
+### 97. Composite Primary keys in JPA
+### 98. Find second-highest salary of an employee?
+### 99. Spring boot annotations
+### 100. How annotation works in java?
+### 101. Transaction rollback
+### 102. Spring boot Actuator
+### 103. @Controller vs @RestController
+### 104. findById() and getOne()
+### 105. Current projects and tech stack
+### 106. How will you design the microservices based on the MVC pattern?
+### 107. How will you implement a global exception handling
+### 108. What is the advantage of this approach compared to just handling it with try catch blocks?
+### 109. How annotations work behind the scene technically?
+### 110. How to handle request parameter validation in SpringBoot?
+### 111. How to write custom validation annotations?
+### 112. What is transaction in an application, and why do we need transactions?
+### 113. Explain how security tokens
+### 114. How will you handle storing of sensitive data like password
+### 115. How is a NoSql database different from an RDBMS?
+### 116. What is generics in java? Can you explain with an example?
+### 117. Explain the concepts related to lambda expressions?
+### 118. Differentiate between List and Set in Java.
+### 119. Java program to find Second-Highest Element in an array
+### 120. Count strings whose length is greater than 3 in List using streams
+### 121. Find duplicate elements in a given integers list in java using stream functions
+### 122. Find the first element of the list using the stream functions
+### 123. Find the first non-repeated character in it using Stream functions
+### 124. Find out all the numbers starting with 1 using stream functions
+### 125. Find repeated char using stream
+### 126. Iterate a stream using the forEach method
+### 127. remove the duplicate element from the list
+### 128. sort the given list in ascending and descending order
+### 129. get the sum of all numbers present in a list using streams
+### 130. Filtering location: [[Pune, Hyd], [Chennai, Hyd], [Chennai, Hyd, Pune]] get unique cities from employee Object as [Hyd, Chennai, Pune] using flatMap
+### 131. Unique array elements using streams
+### 132. Character occurrence in a string using stream
+### 133. Count of words or letters in a string using streams
+### 134. HashMap sort based on value using streams: [fifteen=15, eleven=11, eight=8, one=1]
+### 135. Sort of employee by salary using streams
+### 136. Separate vowels and consonants in string using filter
