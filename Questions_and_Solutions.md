@@ -459,16 +459,98 @@ interface Def {
 ### 38. Fetch - early fetch, lazy fetch
 ### 39. Stupid bean in java
 ### 40. Comparable() vs comparator()
+
 ### 41. To avoid clone() - (Implement Cloneable interface and override clone() and throw cloneNotSupported)
+- Cloning is achieved by implementing the Cloneable interface and by overriding the clone method from the Object class.
+- If Cloneable is used with a singleton class, it's rule of singleton will break,
+- To avoid it we can throw CloneNotSupported exception from the clone method.
+```java
+class AvoidClone1 implements Cloneable {
+  private static AvoidClone1 avoidClone = null;
+
+  private AvoidClone1() {}
+  public static AvoidClone1 getInstance() {
+    if(avoidClone == null ) {
+      avoidClone = new AvoidClone1();
+    }
+    return avoidClone;
+  }
+
+  @Override
+  protected Object clone() throws CloneNotSupportedException {
+    throw new CloneNotSupportedException("Cloning is not allowed for singleton classes.");
+  }
+}
+
+public class AvoidClone {
+  public static void main(String[] args) throws CloneNotSupportedException {
+    System.out.println(AvoidClone1.getInstance().hashCode());
+    System.out.println(AvoidClone1.getInstance().clone().hashCode());
+  }
+}
+```
 ### 42. Merge vs pull
+- git merge command is used merge the changes happened in the remote repository to local repository.
+- git merge should be used along with git fetch, which will download the changes and stores them until you merge it.
+- git pull will do both the action at a time, it will download the changes from the repo and merge with the local code, if any merge conflicts occurs, we have to fix them.
+
 ### 43. Git conflicts resolve
+- git conflicts will occur when the same file and same line is having different content in remote repo and local repo or two different branches, and we try to merge them.
+- if we use any IDE, it will give some options to accept the current changes for keeping your content, and accept incoming changes to receive the remote changes, and accept both the changes so that it will add both the content, if non of them works for you, then you can compare both the changes and modify it yourself.
+- once the modifications are done, we have to add the resolved files and needs to be committed.
+
 ### 44. Git rollback
+- git rollback is the process of reverting back to the original state where we are in a particular commit.
+- If we accidentally committed any changes to wrong branch, any wrong information is committed, then you can do revert back to previous stage using git revert <versionid>
+- by executing this command all the latest changes will be removed and it will return back the previous stage.
+
 ### 45. Virtualization or containerization
+- Virtualization is running multiple machines on the same server.
+- With the help of hypervisor we can install vmware or virtual box etc. to run the virtual machines in a single server.
+- It can run multiples complete Operating systems without affecting other machines and physical machine.
+- The issue with virtualization is it will take a lot of memory for adding a new virtual machine, and it will take time to boot to load all the vm's.
+- Containerization is similar to virtualization but instead of creating a new OS for every application, it will share the server operating system.
+- Containers are lightweight and easily portable.
+- Containers are dependent on Operating system so if we move to another OS it will not work, this is not an issue in the virtualization.
+
 ### 46. Character occurrence using HashMap, put() method returns ? - initially it returns null, later it returns previous value(V)
+```java
+public class OccurrenceWithHashMap {
+    public static void main(String[] args) {
+        HashMap<Character, Integer> map = new HashMap<>();
+        String name = "Rajasekhar karampudi";
+        char[] chars = name.toCharArray();
+        for(char c : chars) {
+            if(c == ' ') {}
+            else if(map.containsKey(c)) {
+                map.put(c, map.get(c)+1);
+            } else {
+                map.put(c, 1);
+            }
+        }
+        System.out.println(map);
+    }
+}
+```
 ### 47. How many tables will create in one-to-many and many-to-many hibernate
+
 ### 48. Spring actuator
+- Spring actuator is used to monitor and manage the health of application.
+- By default, it will give 2 endpoints to access the health, /actuator, /actuator/health.
+- We can create custom endpoints by using @Endpoint annotation and providing the id as the endpoint name.
+- it should map to a method by using @ReadOperation annotation, it can also take Request params.
+- We can also change the default /actuator endpoint from the properties file by using management.endpoints.web.base-path="custom"
+
 ### 49. Spring mvc flow
+- Spring MVC(model control view)
+- When a request sent from the client to the server, it will goto web.xml file then a front controller which is Dispatcher servlet will take that request and it's responsibility is to map the request to the relevant controller.
+- Then the request will be mapped with the controller, from there it will go throw service and dao layers,
+- Once it gets the data from the database, it will return back to service and controller,
+- Then the jasper will map the relevant model by using the view resolver,
+- It will be returned to the client.
+
 ### 50. Spring jpa
+
 ### 51. Get() vs load()
 ### 52. Hibernate caches and configuration for second level cache
 ### 53. Spring vs spring boot
