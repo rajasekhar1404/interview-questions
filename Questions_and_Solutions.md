@@ -552,6 +552,11 @@ public class OccurrenceWithHashMap {
 ### 50. Spring jpa
 
 ### 51. Get() vs load()
+- get and load methods are there in the hibernate session object, which are used to retrieve the entity.
+- get method will call the db and returns the object.
+- load method will not give the original object, instead it will give a proxy object, once we try to use the object then it will give the original object.
+- if not object found get will give null, load will give ObjectNotFoundException.
+
 ### 52. Hibernate caches and configuration for second level cache
 ### 53. Spring vs spring boot
 ### 54. Print middle number in given 3 numbers
