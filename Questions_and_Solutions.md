@@ -640,6 +640,18 @@ public class OccurrenceWithHashMap {
 ### 131. Unique array elements using streams
 ### 132. Character occurrence in a string using stream
 ### 133. Count of words or letters in a string using streams
+```
+        String name = "Karampudi Rajasekhar";
+
+        List<Character> characters = new ArrayList<>();
+
+        for(char c : name.toCharArray()) {
+            characters.add(c);
+        }
+
+        long count = characters.stream().count();
+        System.out.println(count);
+```
 ### 134. HashMap sort based on value using streams: [fifteen=15, eleven=11, eight=8, one=1]
 ### 135. Sort of employee by salary using streams
 ### 136. Separate vowels and consonants in string using filter
