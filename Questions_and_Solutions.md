@@ -638,6 +638,17 @@ public class OccurrenceWithHashMap {
 ### 129. get the sum of all numbers present in a list using streams
 ### 130. Filtering location: [[Pune, Hyd], [Chennai, Hyd], [Chennai, Hyd, Pune]] get unique cities from employee Object as [Hyd, Chennai, Pune] using flatMap
 ### 131. Unique array elements using streams
+```java
+    public static void main(String[] args) {
+        String name = "rajasekhar karampudi";
+        HashSet<Character> characterSet = new HashSet<>();
+        ArrayList<Character> chars = new ArrayList<>();
+        for(char c : name.toCharArray()) {
+            chars.add(c);
+        }
+        chars.stream().filter(n -> characterSet.add(n)).forEach(System.out::print);
+    }
+```
 ### 132. Character occurrence in a string using stream
 ### 133. Count of words or letters in a string using streams
 ```
