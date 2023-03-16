@@ -650,6 +650,20 @@ public class OccurrenceWithHashMap {
     }
 ```
 ### 132. Character occurrence in a string using stream
+```java
+        String name = "rajasekhar karampudi";
+        Map<Character, Integer> occurrence = new HashMap<>();
+        for (char c : name.toCharArray()) {
+            if (c == ' ') {
+
+            } else if(occurrence.get(c) == null) {
+                occurrence.put(c, 1);
+            } else {
+                occurrence.put(c, occurrence.get(c) + 1);
+            }
+        }
+        System.out.println(occurrence);
+```
 ### 133. Count of words or letters in a string using streams
 ```
         String name = "Karampudi Rajasekhar";
